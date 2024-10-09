@@ -1,0 +1,13 @@
+/** @format */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: navajowhite;
+}
+
+img {
+  max-width: 100%;
+}

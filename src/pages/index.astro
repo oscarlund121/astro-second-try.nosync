@@ -1,16 +1,33 @@
 ---
-
+import "../styles/style.css";
+import Card from "../components/Card.astro";
+import Button from "../components/Button.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <Navigation />
+    <h1>Astro</h1>
+
+    <main>
+      <Button variant="primary" size="small">TEXT</Button>
+      <Button variant="secondary" size="medium">TEXT</Button>
+      <Button variant="secondary" size="large">TEXT</Button>
+      <!--       <Card header="Hello World" />
+      <img
+        src="https://via.assets.so/album.png?id=2&q=95&w=360&h=360&fit=fill"
+        alt="artist"
+      />
+      <button>Klik her</button>
+      <Card /> -->
+    </main>
+  </body>
 </html>
